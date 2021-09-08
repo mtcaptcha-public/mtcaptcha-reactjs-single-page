@@ -1,10 +1,9 @@
-import React, { Component } from "react";
+import React, { Component,useEffect } from "react";
 
-export default class Login extends Component {
-    componentDidMount () {
-        window.mtcaptchaConfig.renderQueue.push('login-captcha');
-    }
-    render() {
+export default function Login(){
+        useEffect(() => {
+            window.mtcaptchaConfig.renderQueue.push('login-captcha');
+        })
         return (
             <form>
                 <h3>Sign In</h3>
@@ -36,4 +35,3 @@ export default class Login extends Component {
             </form>
         );
     }
-}
