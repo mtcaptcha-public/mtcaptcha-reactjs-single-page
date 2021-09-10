@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Home({ setToken }){
 var logout=function(){
-localStorage.removeItem('token')
+localStorage.removeItem('usertoken')
 setToken("")
 }
     return (
