@@ -12,12 +12,12 @@ function App() {
   const { token, setToken } = useToken();
   useEffect(() => {
     const mt_service = document.createElement("script");
-    mt_service.src = "https://qa-service.sadtron.com/mtcv1/client/mtcaptcha.min.js";
+    mt_service.src = "https://service.mtcaptcha.com/mtcv1/client/mtcaptcha.min.js";
     mt_service.async = true;
     document.body.appendChild(mt_service);
 
     const mt_service2 = document.createElement("script");
-    mt_service2.src = "https://qa-service2.sadtron.com/mtcv1/client/mtcaptcha2.min.js";
+    mt_service2.src = "https://service2.mtcaptcha.com/mtcv1/client/mtcaptcha.min.js";
     mt_service2.async = true;
     document.body.appendChild(mt_service2);
   })
